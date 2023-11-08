@@ -1,0 +1,117 @@
+/* the nav element */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em 1em;
+    position: sticky;
+    top: 0.5em;
+}
+
+nav:hover{
+    background-color: rgba(255,255,255,0.85);
+}
+
+/* nav content wrapper */
+.nav-wrapper{
+    max-width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25em;
+    width: 100%;
+}
+
+/* navigation links */
+.nav-links{
+    display: flex;
+    gap: 1em;
+}
+
+.nav-link{
+    border: 1px solid transparent; padding: 0.25em;
+    font-weight: 500;
+}
+
+.nav-link.active-link{
+    font-weight: 300;
+}
+
+#ham{
+    display: none;
+}
+
+/* show hamburgar on tablet screens and below */
+@media screen and (max-width: 768px){
+    nav .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        max-width: 320px;
+        width: 100%;
+        border: 1px solid lightgrey;
+        gap: 0.5em;
+    }
+
+    nav .nav-link{
+        margin: 0 0.25em;
+    }
+
+    nav .nav-link:last-child{
+        margin-bottom: 0.25em;
+    }
+
+    nav .nav-link.active-link, nav .nav-link:hover{
+        border-bottom-color: lightgrey;
+    }
+
+    nav{
+        position: relative;
+    }
+    /* hamburgar (normal) styling */
+    #ham{
+        display: flex;
+        padding: 0.25em;
+        flex-direction: column;
+        gap: 0.25em;
+        cursor: pointer;
+    }
+
+    #ham span{
+        background-color: black;
+        width: 1.75em;
+        height: 3px;
+        display: block;
+    }
+
+    /* hamburgar (clicked) styling */
+    #ham.clicked{
+        position: relative;
+        height: 2em;
+        width: 2em;
+    }
+
+    #ham.clicked ~ .nav-links{
+        display: flex !important;
+    }
+
+    #ham.clicked span{
+        position: absolute;
+        right: 0.10em;
+        top: 0.85em;
+    }
+    
+    #ham.clicked span#not-small{
+        display: none;
+    }
+
+    #ham.clicked span:first-child{
+        transform: rotate(45deg);
+    }
+
+    #ham.clicked span:last-child{
+        transform: rotate(-45deg);
+    }
+}

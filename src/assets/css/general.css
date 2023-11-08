@@ -1,0 +1,38 @@
+* {
+    transition: 0.5s;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a, a:visited{
+    color: inherit;
+    text-decoration: unset;
+}
+
+main{
+    max-width: 1020px;
+    margin: auto;
+}
+
+/* images */
+img{
+    width: 100%;
+    height: 100%;
+}
+
+img:not(.icon), *:not(.icon) img{
+    object-fit: cover;
+    object-position: center;
+}
+
+img.icon, .icon img{
+    width: 30px; height: 30px;
+}
+
+img.icon-md, .icon-md img{
+    width: 60px; height: 60px;
+}

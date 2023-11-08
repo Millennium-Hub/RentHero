@@ -1,0 +1,100 @@
+#banner{
+    min-height: 80vh;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+#banner .top{
+    display: flex;
+    min-height: 62.5vh;
+}
+
+#banner .top > *{
+    flex: 1;
+}
+
+#banner .top .lhs{
+    padding: 1em;
+    font-size: 16pt;
+    font-size: x-large;
+}
+
+/* rent and buy form */
+#banner .bottom{
+    align-self: center;
+    margin-top: -2.4em;
+}
+#banner .bottom .rent_buy{
+    display: flex;
+}
+
+.rent_buy span{
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+.rent_buy span:hover, .rent_buy span.active, .form{
+    background-color: rgb(184, 209, 235);
+}
+
+#banner .form{
+    padding: 1em;
+}
+
+.form input{
+    padding: 0.5em 1em 0.5em 1.5em;
+}
+
+.form select{
+    padding: 0.7em 1em 0.7em 1.5em;
+}
+
+.form button{
+    padding: 0.5em 0.75em;
+    border: 1px solid orange;
+    background-color: orangered;
+    color: white;
+}
+
+/* property listing */
+#types{
+    padding: 1em 1em 2em;
+    text-align: center;
+}
+
+.listings{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.listing{
+    padding: 0.25em 1em;
+    flex: 1 1 120px;
+    border: 1px solid lightgrey;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+@media screen and (max-height: 678px){
+    #banner .top .rhs{
+        display: none;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: .5em;
+    }
+
+    .form > *{
+        flex: 1;
+        width: 100%;
+    }
+}
