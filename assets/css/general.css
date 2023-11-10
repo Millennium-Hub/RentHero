@@ -2,6 +2,7 @@
     transition: 0.5s;
     box-sizing: border-box;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 body{
