@@ -1,0 +1,27 @@
+
+.tabs{
+    display: flex;
+    width: 100%;
+}
+.tab{
+    padding: 0.5rem 1rem;
+    border-right: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab:hover{
+    opacity: 0.5;
+}
+
+.tab{
+    background-color:rgb(243, 235, 166);
+}
+.active-tab{
+    background-color: lightsalmon;
+}   
+.bg-cards{
+    background-color: rgb(196, 193, 193);
+    padding: 2rem 0;
+    height: max-content;
+
+}
