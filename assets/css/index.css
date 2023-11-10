@@ -63,8 +63,9 @@
     margin-left: 2rem;
 }
 #clear-search{
-    padding-top: 1rem;
+    margin-top: 1rem;
 }
+
 
 /* property listing */
 #types{
@@ -90,6 +91,10 @@
 }
 
 /* popular section */
+#popular{
+    padding: 5rem 0;
+}
+
 #popular .card{
     background-color: rgb(220, 220, 220);
     flex: 0.1 1 250px;
