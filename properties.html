@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentHero | Properties</title>
+    <link rel="stylesheet" href="assets/css/general.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/properties.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <!-- website logo -->
+          <div class="website-logo">
+            <h1>
+              <span class="logo-rent">Rent</span
+              ><span class="logo-hero">Hero.</span>
+            </h1>
+          </div>
+  
+          <!-- hamburgar -->
+          <div id="ham">
+            <span></span>
+            <span id="not-small"></span>
+            <span></span>
+          </div>
+  
+          <!-- nav links -->
+          <div class="nav-links">
+            <a href="index.html" class="nav-link ">
+              <span>Home</span>
+            </a>
+            <a href="property.html" class="nav-link active-link">
+              <span>Property</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+              <span>Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- main content -->
+      <main>
+        <!-- Banner -->
+        <section id="banner">
+          <div class="top">
+            <div class="lhs">
+              <h1>Buy or Rent your dream house at the best price</h1>
+            </div>
+            <div class="rhs">
+              <img
+                src="assets/images/content/johnson-johnson-U6Q6zVDgmSs-unsplash.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="rent_buy">
+              <span class="active">Rent</span>
+              <span>Buy</span>
+            </div>
+            <div class="form">
+              <input
+                type="search"
+                name="location"
+                id="location"
+                value=""
+                placeholder="Search by Location"
+              />
+              <select name="property" id="property">
+                <option value="home">Home</option>
+                <option value="apartment">Apartment</option>
+                <option value="villa">Villa</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="duplex">Duplex</option>
+              </select>
+              <select name="price_range" id="price_range">
+                <option value="0-5000">GHC 0 - GHC 5000</option>
+                <option value="5001-10000">GHC 5001 - GHC 10,000</option>
+                <option value="10001-15000">GHC 10,001 - GHC 15,000</option>
+                <option value="15001">GHC 15,001+</option>
+              </select>
+             <a href="#popular">
+              <button type="submit" value="submit_search" id="search-btn">
+                  Search Now
+                </button>
+  
+             </a>
+            </div>
+          </div>
+        </section>
+  
+        <section id="types">
+          <h1>Different Types of Property</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi odit
+            dolorum in possimus praesentium, recusandae incidunt iusto obcaecati
+            laboriosam optio quis perferendis beatae eos accusamus ex voluptatem
+            eveniet debitis a.
+          </p>
+          <div class="listings">
+            <div class="listing">
+              <div class="head icon-md">
+                <img src="assets/images/icons/home.svg" alt="" />
+              </div>
+              <div class="content">
+                <h4>Apartment</h4>
+                <span>150 Listing</span>
+              </div>
+            </div>
+            <div class="listing">
+              <div class="head icon-md">
+                <img src="assets/images/icons/home.svg" alt="" />
+              </div>
+              <div class="content">
+                <h4>Home</h4>
+                <span>90 Listing</span>
+              </div>
+            </div>
+            <div class="listing">
+              <div class="head icon-md">
+                <img src="assets/images/icons/home.svg" alt="" />
+              </div>
+              <div class="content">
+                <h4>Villa</h4>
+                <span>50 Listing</span>
+              </div>
+            </div>
+            <div class="listing">
+              <div class="head icon-md">
+                <img src="assets/images/icons/home.svg" alt="" />
+              </div>
+              <div class="content">
+                <h4>Townhouse</h4>
+                <span>20 Listing</span>
+              </div>
+            </div>
+          </div>
+        </section>
+  <!-- properties  -->
+  <section class="properties-section" id="popular">
+    <button class="hide-card" id="clear-search">clear search</button>
+    <p class="results-info hide-card">Search results:</p>
+    <p class="no-properties hide-card">No properties found😥</p> 
+    <article class="tabs">
+        <span class="tab active-tab">Apartment</span>
+        <span class="tab">Home</span>
+        <span class="tab">Villa</span>
+        <span class="tab">Townhouse</span>
+    </article>
+    <div class="bg-cards">
+        <article class="apartment">
+            <div class="cards">
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/sidekix-media-UDDULE_eIBY-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Apartment</p>
+                    <h4 class="price">GHC 10,000 - GHC 18,000</h4>
+                    <span id="location">Toy Town, Obuasi-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" property- alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/scott-webb-1ddol8rgUH8-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Apartment</p>
+                    <h4 class="price">GHC 900 - GHC 1,000</h4>
+                    <span id="location">Oseikrom, Kumasi-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/roam-in-color-z3QZ6gjGRt4-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Apartment</p>
+                    <h4 class="price">GHC 11,000 - GHC 13,000</h4>
+                    <span id="location">Tema Community 3, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/kara-eads-L7EwHkq1B2s-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Apartment</p>
+                    <h4 class="price">GHC 19,000 - GHC 23,000</h4>
+                    <span id="location">East Legon, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/johnson-johnson-U6Q6zVDgmSs-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Apartment</p>
+                    <h4 class="price">GHC 22,000 - GHC 38,000</h4>
+                    <span id="location">Osu Street, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/jacques-bopp-Hh18POSx5qk-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Apartment</p>
+                    <h4 class="price">GHC 300 - GHC 600</h4>
+                    <span id="location">Tafo, Kumasi-Ghana</span>
+                  </div>
+    
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </article>
+        <article class="townhouse">
+            
+            <div class="cards">
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/francesca-tosolini-qnSTxcs0EEs-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Townhouse</p>
+                    <h4 class="price">GHC 200,000 - GHC 500,000</h4>
+                    <span id="location">Toy Town, Obuasi-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" property- alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/960x0.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Townhouse</p>
+                    <h4 class="price">GHC 11,000 - GHC 14,000</h4>
+                    <span id="location">Oseikrom, Kumasi-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/todd-kent-178j8tJrNlc-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Townhouse</p>
+                    <h4 class="price">GHC 6,000 - GHC 7,000</h4>
+                    <span id="location">Tema Community 3, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Townhouse</p>
+                    <h4 class="price">GHC 22,000 - GHC 25,000</h4>
+                    <span id="location">East Legon, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/spacejoy-YI2YkyaREHk-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Townhouse</p>
+                    <h4 class="price">GHC 16,000 - GHC18,000</h4>
+                    <span id="location">Osu Street, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/spacejoy-XM-miHibz64-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Townhouse</p>
+                    <h4 class="price">GHC 1,000 - GHC 5,000</h4>
+                    <span id="location">Tafo, Kumasi-Ghana</span>
+                  </div>
+    
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </article>
+        <article class="villa">
+            <div class="cards">
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/spacejoy-umAXneH4GhA-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Villa</p>
+                    <h4 class="price">GHC 2,000 - GHC 5,000</h4>
+                    <span id="location">Toy Town, Obuasi-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" property- alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/spacejoy-trG8989WjFA-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Villa</p>
+                    <h4 class="price">GHC 9,000 - GHC 10,000</h4>
+                    <span id="location">Oseikrom, Kumasi-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/spacejoy-RqO6kwm4tZY-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Villa</p>
+                    <h4 class="price">GHC 200,000 - GHC 500,000</h4>
+                    <span id="location">Tema Community 3, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/sidekix-media-WgkA3CSFrjc-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Villa</p>
+                    <h4 class="price">GHC 12,000 - GHC 15,000</h4>
+                    <span id="location">East Legon, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/sidekix-media-UDDULE_eIBY-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Villa</p>
+                    <h4 class="price">GHC 6,000 - GHC 8,000</h4>
+                    <span id="location">Osu Street, Accra-Ghana</span>
+                  </div>
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="head">
+                  <img
+                    src="assets/images/content/scott-webb-1ddol8rgUH8-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <div class="top">
+                    <p class="property-type">Villa</p>
+                    <h4 class="price">GHC 1,000 - GHC 5,000</h4>
+                    <span id="location">Tafo, Kumasi-Ghana</span>
+                  </div>
+    
+                  <div class="base">
+                    <div class="icon">
+                      <img src="assets/images/icons/bed.svg" alt="" />
+                      <span>8</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/water.svg" alt="" />
+                      <span>4</span>
+                    </div>
+                    <div class="icon">
+                      <img src="assets/images/icons/car.svg" alt="" />
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </article>
+    <article class="home">
+        
+        <div class="cards">
+          <div class="card">
+            <div class="head">
+              <img
+                src="assets/images/content/roam-in-color-z3QZ6gjGRt4-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="top">
+                <p class="property-type">Home</p>
+                <h4 class="price">GHC 200,000 - GHC 500,000</h4>
+                <span id="location">Toy Town, Obuasi-Ghana</span>
+              </div>
+              <div class="base">
+                <div class="icon">
+                  <img src="assets/images/icons/bed.svg" property- alt="" />
+                  <span>8</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/water.svg" alt="" />
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/car.svg" alt="" />
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <img
+                src="assets/images/content/kara-eads-L7EwHkq1B2s-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="top">
+                <p class="property-type">Home</p>
+                <h4 class="price">GHC 9,000 - GHC 10,000</h4>
+                <span id="location">Oseikrom, Kumasi-Ghana</span>
+              </div>
+              <div class="base">
+                <div class="icon">
+                  <img src="assets/images/icons/bed.svg" alt="" />
+                  <span>8</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/water.svg" alt="" />
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/car.svg" alt="" />
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <img
+                src="assets/images/content/johnson-johnson-U6Q6zVDgmSs-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="top">
+                <p class="property-type">Home</p>
+                <h4 class="price">GHC 200,000 - GHC 500,000</h4>
+                <span id="location">Tema Community 3, Accra-Ghana</span>
+              </div>
+              <div class="base">
+                <div class="icon">
+                  <img src="assets/images/icons/bed.svg" alt="" />
+                  <span>8</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/water.svg" alt="" />
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/car.svg" alt="" />
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <img
+                src="assets/images/content/jacques-bopp-Hh18POSx5qk-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="top">
+                <p class="property-type">Home</p>
+                <h4 class="price">GHC 12,000 - GHC 15,000</h4>
+                <span id="location">East Legon, Accra-Ghana</span>
+              </div>
+              <div class="base">
+                <div class="icon">
+                  <img src="assets/images/icons/bed.svg" alt="" />
+                  <span>8</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/water.svg" alt="" />
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/car.svg" alt="" />
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <img
+                src="assets/images/content/francesca-tosolini-qnSTxcs0EEs-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="top">
+                <p class="property-type">Home</p>
+                <h4 class="price">GHC 6,000 - GHC 8,000</h4>
+                <span id="location">Osu Street, Accra-Ghana</span>
+              </div>
+              <div class="base">
+                <div class="icon">
+                  <img src="assets/images/icons/bed.svg" alt="" />
+                  <span>8</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/water.svg" alt="" />
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/car.svg" alt="" />
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <img
+                src="assets/images/content/960x0.webp"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="top">
+                <p class="property-type">Home</p>
+                <h4 class="price">GHC 1,000 - GHC 5,000</h4>
+                <span id="location">Tafo, Kumasi-Ghana</span>
+              </div>
+
+              <div class="base">
+                <div class="icon">
+                  <img src="assets/images/icons/bed.svg" alt="" />
+                  <span>8</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/water.svg" alt="" />
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <img src="assets/images/icons/car.svg" alt="" />
+                  <span>2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+</div>
+
+  </section>
+
+  <!-- footer -->
+
+  <!-- page footer -->
+  <footer>
+    <div class="foot-wrapper">
+      <div id="page">
+        <!-- website logo -->
+        <div class="website-logo">
+          <h1>
+            <span class="logo-rent">Rent</span
+            ><span class="logo-hero">Hero.</span>
+          </h1>
+        </div>
+        <p class="web-statement">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+          porro fuga ipsum ratione minima necessitatibus voluptas voluptatum
+          laborum, totam molestias possimus hic assumenda perspiciatis commodi
+          a. Cumque mollitia laboriosam similique.
+        </p>
+        <div class="social-links">
+          <a href="" class="social-link icon">
+            <img src="assets/images/icons/013-facebook.png" alt="facebook" />
+          </a>
+          <a href="" class="social-link icon">
+            <img
+              src="assets/images/icons/014-instagram.png"
+              alt="instagram"
+            />
+          </a>
+          <a href="" class="social-link icon">
+            <img src="assets/images/icons/004-twitter.png" alt="twitter" />
+          </a>
+        </div>
+      </div>
+      <div id="explore">
+        <h3>Explore</h3>
+        <div class="nav-links">
+          <a href="" class="nav-link">
+            <span>Rent a home</span>
+          </a>
+          <a href="" class="nav-link">
+            <span>Buy a home</span>
+          </a>
+          <a href="" class="nav-link">
+            <span>Become a partner</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h3>Contact</h3>
+        <div class="address">
+          <span class="tel">057 810 1031</span>
+          <span class="email">example@email.com</span>
+          <span class="street">24/0242 Osu Street, Accra-Ghana</span>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <p>2023 &copy; Copyright RentHero. All Rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // hamburger
+    const ham = document.querySelector("#ham");
+      const nav = document.querySelector("nav");
+      const rent_buy = document.querySelectorAll(".rent_buy span");
+
+      ham.addEventListener("click", function () {
+        ham.classList.toggle("clicked");
+      });
+
+// Get the DOM elements for the tabs and property types.
+const tabs = document.querySelectorAll('.tab');
+const propertyTypes = document.querySelectorAll('.bg-cards article');
+
+// Get the active tab button.
+const activeTabButton = document.querySelector('.tab.active-tab');
+
+// Get the property type whose class name is the same as the text content of the active tab.
+const activePropertyType = document.querySelector('.bg-cards article.' + activeTabButton.textContent.toLowerCase());
+
+// Hide all of the property type cards.
+propertyTypes.forEach(propertyType => {
+  propertyType.classList.add('hide-card');
+});
+
+// Show the active property type card.
+activePropertyType.classList.remove('hide-card');
+
+// Iterate over the tabs and add an event listener to each tab.
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove the 'active-tab' class from all of the tabs.
+    tabs.forEach(tabEl => {
+      tabEl.classList.remove('active-tab');
+    });
+
+    // Add the 'active-tab' class to the clicked tab.
+    tab.classList.add('active-tab');
+
+    // Get the property type whose class name is the same as the text content of the active tab.
+    const activePropertyType = document.querySelector('.bg-cards article.' + tab.textContent.toLowerCase());
+
+    // Hide all of the property type cards.
+    propertyTypes.forEach(propertyType => {
+      propertyType.classList.add('hide-card');
+    });
+
+    // Show the active property type card.
+    activePropertyType.classList.remove('hide-card');
+  });
+});
+
+
+
+
+// search functionality
+const searchLocate = document.querySelector("#location");
+      const searchProperty = document.querySelector("#property");
+      const searchPriceRange = document.querySelector("#price_range");
+      const searchBtn = document.querySelector("#search-btn");
+      const clearSearchBtn = document.querySelector("#clear-search");
+      const resultsInfo = document.querySelector('.results-info')
+      const cards = document.querySelectorAll(".card");
+      const priceRange = document.querySelectorAll(".price");
+      const locate = document.querySelectorAll(".location");
+      const propertyType = document.querySelectorAll(".property-type");
+      const typeSection = document.querySelector("#types");
+      const noProperties = document.querySelector('.no-properties')
+      const tabsContainer = document.querySelector('.tabs')
+      const bgCards = document.querySelector('.bg-cards')
+
+      function turnToNumbers(string) {
+        string = string.replace(/\GHC|,|\+/g, "");
+        // Convert the string to a number.
+        return Number(string);
+      }
+
+      function turnToLocation(string){
+        string = string.replace(/\-|,/g," ")
+        return string
+      }
+
+      clearSearchBtn.addEventListener("click", () => {
+        typeSection.classList.remove("hide-card");
+        clearSearchBtn.classList.add("hide-card");
+        resultsInfo.classList.add('hide-card')
+        noProperties.classList.add('hide-card')
+        bgCards.style.display = 'block'
+            tabsContainer.style.display = 'flex'
+            searchLocate.value = ''
+            propertyTypes.forEach(propertyType => {
+  propertyType.classList.remove('hide-card');
+});
+
+cards.forEach((card) => {
+    card.classList.remove("hide-card");
+})
+      });
+
+
+
+      searchBtn.addEventListener("click", () => {
+        bgCards.style.display = 'block' 
+        tabsContainer.style.display = 'none'
+        const propertyText = searchProperty.value.toLowerCase();
+        const locateText = searchLocate.value.toLowerCase().split(" ");
+        const priceText = searchPriceRange.value.split("-");
+        const minSearchPrice = Number(priceText[0]);
+        const maxSearchPrice = Number(priceText[1]);
+
+        typeSection.classList.add("hide-card");
+        clearSearchBtn.classList.remove("hide-card");
+        resultsInfo.classList.remove('hide-card')
+        
+        propertyTypes.forEach(propertyType => {
+  propertyType.classList.remove('hide-card');
+    });
+
+
+        cards.forEach((card) => {
+          const type =
+            card.children[1].children[0].children[0].textContent.toLowerCase();
+          const loc = turnToLocation(card.children[1].children[0].children[2].textContent)
+            .toLowerCase()
+            .split(" ");
+          const price =
+            card.children[1].children[0].children[1].textContent.split("-");
+          const minPrice = turnToNumbers(price[0]);
+          const maxPrice = turnToNumbers(price[1]);
+          card.classList.remove("hide-card");
+
+          let inc = loc.filter(locate => locateText.includes(locate))
+            
+       
+          if (
+            inc.length === 0 ||
+            type !== propertyText 
+            || minSearchPrice <= 15000 && minPrice < minSearchPrice ||
+            maxPrice > maxSearchPrice
+          ) {
+            card.classList.add("hide-card");
+            noProperties.classList.add('hide-card')
+          } 
+           if (
+            inc.length === 0 &&
+            type !== propertyText 
+            || minSearchPrice > 15000 &&
+            minPrice <= 15000 &&
+            maxPrice <= 15000
+          ) {
+            card.classList.add("hide-card");
+            noProperties.classList.add('hide-card')
+          }
+           
+        // Count the number of found properties.
+        let foundProperties = 0;
+        cards.forEach((card) => {
+            if (!card.classList.contains("hide-card")) {
+            foundProperties++;
+            }
+        });
+
+        // If no properties were found, display a message to the user.
+        if (foundProperties === 0) {
+            // bgCards.style.display = 'none'
+            tabsContainer.style.display = 'none'
+            noProperties.classList.remove('hide-card')
+            console.log(foundProperties)
+        }
+                });
+              
+            });
+            
+  </script>
+</body>
+</html>
