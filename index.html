@@ -631,7 +631,6 @@
       const whyWorkSection = document.querySelector("#why_work");
       const noProperties = document.querySelector('.no-properties')
       const testimonialSection = document.querySelector("#testimonial");
-
       function turnToNumbers(string) {
         string = string.replace(/\$|,|\+/g, "");
         // Convert the string to a number.
@@ -662,15 +661,13 @@
         const minSearchPrice = Number(priceText[0]);
         const maxSearchPrice = Number(priceText[1]);
 
-
         typeSection.classList.add("hide-card");
         popularHead.classList.add("hide-card");
         whyWorkSection.style = "display: none";
         testimonialSection.classList.add("hide-card");
         clearSearchBtn.classList.remove("hide-card");
         resultsInfo.classList.remove('hide-card')
-        let isHidden = 0
-
+        
 
         cards.forEach((card) => {
           const type =
@@ -685,8 +682,8 @@
           card.classList.remove("hide-card");
 
           let inc = loc.filter(locate => locateText.includes(locate))
-
             
+       
           if (
             inc.length === 0 ||
             type !== propertyText 
@@ -694,24 +691,33 @@
             maxPrice > maxSearchPrice
           ) {
             card.classList.add("hide-card");
-            isHidden ++
-          } else if (
+            noProperties.classList.add('hide-card')
+          } 
+           if (
+            inc.length === 0 &&
             type !== propertyText 
             || minSearchPrice > 15000 &&
             minPrice <= 15000 &&
             maxPrice <= 15000
           ) {
             card.classList.add("hide-card");
-            typeSection.classList.add("hide-card");
-            popularHead.classList.add("hide-card");
-            whyWorkSection.style = "display: none";
-            testimonialSection.classList.add("hide-card");
+            noProperties.classList.add('hide-card')
           }
-           if(isHidden === cards.length){
-            noProperties.classList.remove('hide-card')
-          }
+           
+        // Count the number of found properties.
+        let foundProperties = 0;
+        cards.forEach((card) => {
+            if (!card.classList.contains("hide-card")) {
+            foundProperties++;
+            }
         });
-      });
+
+        // If no properties were found, display a message to the user.
+        if (foundProperties === 0) {
+            noProperties.classList.remove('hide-card')
+        }
+                });
+            });
     </script>
   </body>
 </html>
